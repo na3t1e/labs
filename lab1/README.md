@@ -83,6 +83,11 @@ Content-Type: application/json
 
 ### Отчеты SAST/SCA
 
+<img src=https://github.com/na3t1e/labs/blob/main/lab1/sucess.png/>
+
+<img src=https://github.com/na3t1e/labs/blob/main/lab1/actions.png/>
+
+<img src=https://github.com/na3t1e/labs/blob/main/lab1/otchot.png/>
 
 [Ссылка](https://github.com/na3t1e/labs/actions/runs/20105308095/job/57687352018) на успешно пройденный pipeline
 
