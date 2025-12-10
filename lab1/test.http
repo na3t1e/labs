@@ -1,0 +1,42 @@
+### Регистрация пользователя
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "123456",
+  "nickname": "Tester",
+  "email": "test@example.com"
+}
+
+### Логин пользователя
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+"username": "testuser",
+"password": "123456"
+}
+
+### Создать первую новую заметку для пользователя
+POST http://localhost:8080/api/notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImlhdCI6MTc1ODcyMDQwNCwiZXhwIjoxNzU4NzI0MDA0fQ.6CkIIqo0U9-AJanBOMSG_htOD5LCBk0jLm0efFwOByw
+Content-Type: application/json
+
+{
+  "content": "Сегодня я делала лабораторную работу по инфобезу"
+}
+
+### Создать вторую новую заметку для пользователя
+POST http://localhost:8080/api/notes
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImlhdCI6MTc1ODcyMDQwNCwiZXhwIjoxNzU4NzI0MDA0fQ.6CkIIqo0U9-AJanBOMSG_htOD5LCBk0jLm0efFwOByw
+Content-Type: application/json
+
+{
+  "content": "Сегодня я изучала SDK1.1-M"
+}
+
+### Получить список всех заметок
+GET http://localhost:8080/api/data?username=testuser
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0dXNlciIsImlhdCI6MTc1ODcyMDQwNCwiZXhwIjoxNzU4NzI0MDA0fQ.6CkIIqo0U9-AJanBOMSG_htOD5LCBk0jLm0efFwOByw
+
